@@ -87,7 +87,7 @@ document.getElementById('recipe-form').addEventListener('submit', async (event) 
     responseDiv.innerHTML = 'Generating recipe...';
 
     try {
-        const response = await fetch('/ai', {
+        const response = await fetch('http://localhost:3000/ai', { // Updated URL
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
